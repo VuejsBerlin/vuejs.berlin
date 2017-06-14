@@ -114,13 +114,15 @@ export default {
   mounted () {
     const upper = this.$refs.upper
     const lower = this.$refs.lower
+    const upperLen = upper.getTotalLength()
+    const lowerLen = lower.getTotalLength()
 
-    for(let path of [upper, lower]) {
-      const l = path.getTotalLength()
-      path.style.strokeDashoffset = l
-      path.style.strokeDasharray = l
-    }
-    
+    upper.style.strokeDashoffset = upperLen
+    lower.style.strokeDashoffset = -lowerLen
+
+    upper.style.strokeDasharray = upperLen
+    lower.style.strokeDasharray = lowerLen
+
     this.$nextTick(() => {
       upper.classList.add('animated')
       lower.classList.add('animated')
@@ -141,7 +143,7 @@ export default {
   animation-fill-mode: forwards;
 }
 @keyframes dash {
-  90% { stroke-dashoffset: 0; fill-opacity: 0; }
+  75% { stroke-dashoffset: 0; fill-opacity: 0; }
   100% { fill-opacity: 1; }
 }
 </style>

@@ -1,9 +1,18 @@
 <template>
   <div id="app">
     <div id="wallpaper" v-lazy-load-bg='wallpaper' />
+    <router-link to='/'>
+      <Logo ref="logo" />
+    </router-link>
     <div id="container">
-      <Logo />
-      <Frontpage />
+      <router-view />
+
+      <footer>
+        <router-link to='/about'>about</router-link>
+        © 2017 <a href="https://koehr.in">koehr</a>
+        —
+        Background image "Berlin Skyline Sunset" © 2014 <a href="http://sumfinity.com/">Nico Trinkhaus</a>
+      </footer>
     </div>
   </div>
 </template>
@@ -11,13 +20,26 @@
 <script>
 import wallpaper from './assets/wallpaper.jpg'
 import Logo from './Logo.vue'
-import Frontpage from './FrontPage.vue'
 
 export default {
   name: 'app',
-  components: { Frontpage, Logo },
+  components: { Logo },
   data () {
-    return { wallpaper }
+    return { wallpaper, scrollTop: 0 }
+  },
+  mounted () {
+    const logoElement = this.$refs.logo.$el
+    const height = window.innerHeight
+    const topPos = logoElement.getBoundingClientRect().top
+    const transform = () => {
+      const scale = 1.0 - parseFloat(document.body.scrollTop) / height
+      return `scale(${scale > 0.3 ? scale : 0.3}) translate(0,-${(topPos - topPos * scale) * 4.8}px)`
+    }
+
+    logoElement.style.transform = transform()
+    document.onscroll = evt => {
+      logoElement.style.transform = transform()
+    }
   }
 }
 </script>
@@ -49,13 +71,22 @@ body, #app {
 
 #container {
   width: 96rem;
-  margin: auto;
-  margin-top: 30vh;
+  height: calc(90vh - 10rem);
+  margin: 100vh auto 5vh;
+  padding-top: 10rem;
+  background: white;
+}
+#container > footer {
+  text-align: center;
 }
 #logo {
+  position: fixed;
+  top: 0;
   display: block;
-  width: 40rem;
-  margin: auto;
+  width: 100vw;
+  height: 40vh;
+  margin-top: 30vh;
+  transform: scale(1.0) translate(0, 0);
 }
 
 h1, h2 { font-weight: normal; }
