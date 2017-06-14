@@ -32,14 +32,14 @@ export default {
     const height = window.innerHeight
     const topPos = logoElement.getBoundingClientRect().top
     const transform = () => {
-      const scale = 1.0 - parseFloat(document.body.scrollTop) / height
+      const scale = 1.0 - parseFloat(window.scrollY) / height
       return `scale(${scale > 0.3 ? scale : 0.3}) translate(0,-${(topPos - topPos * scale) * 4.8}px)`
     }
 
     logoElement.style.transform = transform()
-    document.onscroll = evt => {
+    window.addEventListener('scroll', evt => {
       logoElement.style.transform = transform()
-    }
+    })
   }
 }
 </script>
