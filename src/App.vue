@@ -70,18 +70,25 @@ body, #app {
 #wallpaper.lazy-load-success { opacity: 1; }
 
 #container {
-  width: 96rem;
+  position: relative;
+  z-index: 0;
+  width: 90rem;
   height: calc(90vh - 10rem);
   margin: 100vh auto 5vh;
-  padding-top: 10rem;
+  padding: 10rem 2rem 0;
   background: white;
 }
 #container > footer {
+  position: absolute;
+  bottom: 1em;
+  display: block;
+  width: 100%;
   text-align: center;
 }
 #logo {
   position: fixed;
   top: 0;
+  z-index: 1;
   display: block;
   width: 100vw;
   height: 40vh;
@@ -89,8 +96,9 @@ body, #app {
   transform: scale(1.0) translate(0, 0);
 }
 
-h1, h2 { font-weight: normal; }
+h1, h2 { font-weight: normal; text-align: center; }
 ul { list-style-type: none; padding: 0; }
 li { display: inline-block; margin: 0 10px; }
-a { color: #42b983; }
+a { color: #42b983; text-decoration: none; font-variant: small-caps; }
+p { font-size: 2rem; margin: .5em; }
 </style>

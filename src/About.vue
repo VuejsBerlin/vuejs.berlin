@@ -1,9 +1,20 @@
 <template>
-  <article id="about">
-    <p>© 2017 <a href="https://koehr.in">koehr</a></p>
-    <p>
-      Background image "Berlin Skyline Sunset" © 2014
-      <a href="http://sumfinity.com/">Nico Trinkhaus</a>
-    </p>
-  </article>
+  <section id="about">
+    <header>
+      <h1>About</h1>
+    </header>
+    <article>
+      <p>
+        <a href="#">vuejs.berlin</a>
+        brought to you by
+        <a href="//koehr.in">koehr</a>,
+        the organiser of the
+        <a href="//meetup.com/de-DE/Vue-js-Berlin/">Vuejs // Berlin meetup</a>.
+      </p>
+      <p>
+        The original source code of this Vuejs app can be found at
+        <a href="//github.com/nkoehring/vuejs.berlin">Github</a>.
+      </p>
+    </article>
+  </section>
 </template>
