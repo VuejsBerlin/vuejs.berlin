@@ -1,9 +1,8 @@
 <template>
   <div id="app">
     <div id="wallpaper" v-lazy-load-bg='wallpaper' />
-    <router-link to='/'>
-      <Logo ref="logo" />
-    </router-link>
+    <router-link to='/' v-if="$route.name !== 'root'"><Logo ref="logo" /></router-link>
+    <a href="#" v-scroll-to="'#container'" v-else><Logo ref="logo" /></a>
     <div id="container">
       <router-view />
 
@@ -72,12 +71,21 @@ body, #app {
 #container {
   position: relative;
   z-index: 0;
-  width: 90rem;
+  width: 100vw;
+  max-width: 70rem;
   height: calc(90vh - 10rem);
   margin: 100vh auto 5vh;
   padding: 10rem 2rem 0;
   background: white;
 }
+
+@media (max-width: 768px) {
+  #container {
+    margin: 100vh auto 0;
+    padding: 10rem 0
+  }
+}
+
 #container > footer {
   position: absolute;
   bottom: 1em;

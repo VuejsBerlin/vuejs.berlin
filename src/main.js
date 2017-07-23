@@ -3,11 +3,16 @@ import App from './App.vue'
 import Frontpage from './FrontPage.vue'
 import About from './About.vue'
 
-import LazyImg from 'v-lazy-img'
-Vue.use(LazyImg)
-
 import Router from 'vue-router'
+import ScrollTo from 'vue-scrollto'
+import LazyImg from 'v-lazy-img'
+
 Vue.use(Router)
+Vue.use(ScrollTo, {
+  duration: 400,
+  easing: 'ease-out'
+})
+Vue.use(LazyImg)
 
 const routes = [
   { name: 'root', path: '/', component: Frontpage },
@@ -20,9 +25,9 @@ const app = new Vue({
     mode: 'history',
     routes,
     scrollBehavior (to, from, savedPos) {
-      return savedPos ? savedPos : { selector: '#container' }
+      return !savedPos ? { selector: '#container' } : savedPos
     }
   })
 })
 
-document.addEventListener('DOMContentLoaded', () =>  app.$mount('#app'))
+document.addEventListener('DOMContentLoaded', () => app.$mount('#app'))
