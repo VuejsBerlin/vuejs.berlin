@@ -1,0 +1,18 @@
+{
+  "name": "vuejs.berlin",
+  "version": "0.1.0",
+  "description": "Vuejs // Berlin Homepage",
+  "main": "index.js",
+  "repository": "https://github.com/nkoehring/vuejs.berlin",
+  "author": "koehr <n@koehr.in>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "devDependencies": {
+    "vuepress": "^0.11.0",
+    "vuepress-theme-vuejs-berlin": "^0.1.0"
+  },
+  "dependencies": {}
+}
