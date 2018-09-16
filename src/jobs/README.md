@@ -1,1 +1,4 @@
-# Job Board
+---
+title: Job Board
+---
+
