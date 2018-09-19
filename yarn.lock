@@ -5806,9 +5806,9 @@ vuepress-html-webpack-plugin@^3.2.0:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
-vuepress-theme-vuejs-berlin@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/vuepress-theme-vuejs-berlin/-/vuepress-theme-vuejs-berlin-0.1.0.tgz#0c7e472b31d1ecab32d2f82a70903dbf2b12d506"
+"vuepress-theme-vuejs-berlin@git://github.com/nkoehring/vuepress-theme-vuejs-berlin.git":
+  version "0.2.1"
+  resolved "git://github.com/nkoehring/vuepress-theme-vuejs-berlin.git#f494abcb0abd0c31345afd12d1b9865b32d5debb"
   dependencies:
     animate.css "^3.6.1"
     v-lazy-img "^0.1.0"
