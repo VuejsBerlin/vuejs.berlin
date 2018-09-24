@@ -21,6 +21,18 @@ Doors open at 7pm, talks start usually around 7:30 or 7:45.
 
 Talks to be announced
 
+## tldr
+
+<shortcuts />
+
 ## Meetups & Talks
 
 Out meetups take place monthly every second Tuesday at 7pm. We usually have at least one talk right after we ate some pizza and had some drinks. We also [stream](https://www.instagram.com/vuejs_berlin/) and [record](https://www.youtube.com/channel/UClSmiKom-8XsWbi5NTWurjg) the talks every time. Records are usually available one or two days after the meetup.
+
+Find all meetup recordings [here](/meetups/) or on [youtube](https://www.youtube.com/channel/UClSmiKom-8XsWbi5NTWurjg)
+
+## Newsletters
+
+Shortly after every meetup we publish newsletters to help you keeping up with all the events in and around the community.
+
+You can find them in our [newsletter section](/newsletters/)
