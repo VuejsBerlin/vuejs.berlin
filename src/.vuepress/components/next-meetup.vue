@@ -1,7 +1,7 @@
 <template>
   <div class="next-meetup">
     <a :href="href" target="_blank" rel="noopener noreferrer">
-      Next meetup on</br>{{ niceDate }}<OutboundLink/>
+      Next&nbsp;meetup&nbsp;on <span v-html="niceDate" /><OutboundLink/>
     </a>
   </div>
 </template>
@@ -47,7 +47,7 @@ export default {
       const suf = this.daySuffix
       const monthName = months[d.getMonth()]
       const year = d.getFullYear()
-      return `${dayName}, ${day}${suf} of ${monthName} ${year}`
+      return `${dayName}, ${day}${suf}&nbsp;of&nbsp;${monthName} ${year}`
     }
   }
 }
@@ -55,7 +55,12 @@ export default {
 
 <style scoped>
 .next-meetup {
+  width: 100%;
+  max-width: 560px;
+  margin: auto;
   font-size: 2em;
-  margin: 0 1em;
+}
+.next-meetup a > svg {
+  position: absolute;
 }
 </style>
