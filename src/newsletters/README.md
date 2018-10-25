@@ -2,6 +2,8 @@
 title: Newsletters
 ---
 
+[201810](/newsletters/201810.html)
+
 [201809](/newsletters/201809.html)
 
 [201808](/newsletters/201808.html)
