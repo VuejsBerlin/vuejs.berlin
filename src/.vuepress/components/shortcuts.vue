@@ -1,7 +1,7 @@
 <template>
   <div class="shortcuts">
-    <a href="/meetups/">Recordings</a>
-    <a href="/newsletters/">Newsletters</a>
+    <router-link to="/meetups/">Recordings</router-link>
+    <router-link to="/newsletters/">Newsletters</router-link>
   </div>
 </template>
 
