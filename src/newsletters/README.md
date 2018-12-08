@@ -2,12 +2,14 @@
 title: Newsletters
 ---
 
-[201810](/newsletters/201810.html)
+[November 2018](/newsletters/201811.html)
 
-[201809](/newsletters/201809.html)
+[October 2018](/newsletters/201810.html)
 
-[201808](/newsletters/201808.html)
+[September 2018](/newsletters/201809.html)
 
-[201807](/newsletters/201807.html)
+[August 2018](/newsletters/201808.html)
 
-[201806](/newsletters/201806.html)
+[July 2018](/newsletters/201807.html)
+
+[June 2018](/newsletters/201806.html)

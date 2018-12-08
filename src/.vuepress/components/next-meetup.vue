@@ -20,13 +20,13 @@ const months = [
 export default {
   name: 'next-meetup',
   computed: {
-    href () {
-      const id = this.upcoming.id
-      return id ? `${URLprefix}/${id}/` : this.upcoming.url
-    },
     upcoming () {
       const now = Date.now()
       return meetupList.find(meetup => Date.parse(meetup.date) > now)
+    },
+    href () {
+      const id = this.upcoming.id
+      return id ? `${URLprefix}/${id}/` : this.upcoming.url
     },
     upcomingDate () {
       return new Date(this.upcoming.date)

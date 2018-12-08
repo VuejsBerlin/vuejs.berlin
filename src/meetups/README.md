@@ -2,6 +2,20 @@
 title: Meetups & Talks
 ---
 
+## 2018-12-11 // Game Programming with VueJS
+
+Unfortunately there are no recordings available, yet.
+But you can find [more details about the event](/meetups/201812.html).
+
+## 2018-11-22 // Berlin meets Vuejs Roadtrip
+
+Unfortunately there are no recordings available, yet.
+But you can find [more details about the event](/meetups/201811.html).
+
+## 2018-10-09 // Introscope
+
+[watch here](/meetups/201810.html) | [watch on youtube](https://www.youtube.com/watch?v=oA_EWjHYuqA)
+
 ## 2018-09-11 // Design Systems
 
 [watch here](/meetups/201809.html) | [watch on youtube](https://www.youtube.com/watch?v=dFyqnXLspZ4)
