@@ -2,6 +2,12 @@
 title: Meetups & Talks
 ---
 
+---
+
+There are no recordings for the time being. We're working on a way to solve the issue. Thanks for the patience.
+
+---
+
 ## 2018-12-11 // Game Programming with VueJS
 
 Unfortunately there are no recordings available, yet.
