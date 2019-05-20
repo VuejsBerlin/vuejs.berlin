@@ -2,9 +2,11 @@
 title: Newsletters
 ---
 
+[May 2019](/newsletters/201905.html)
+
 [April 2019](/newsletters/201904.html)
 
-*sorry, no newsletters for a while*
+*sorry, there where no newsletters for a few months*
 
 [November 2018](/newsletters/201811.html)
 

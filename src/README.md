@@ -19,7 +19,7 @@ Doors open at 7pm, talks start usually around 7:30 or 7:45.
 
 <next-meetup />
 
-Talks to be announced
+Talks will be announced on [our meetup page](https://www.meetup.com/de-DE/Vue-js-Berlin/).
 
 ## tldr
 
@@ -27,7 +27,7 @@ Talks to be announced
 
 ## Meetups & Talks
 
-Out meetups take place monthly every second Tuesday at 7pm. We usually have at least one talk right after we ate some pizza and had some drinks. We also [stream](https://www.instagram.com/vuejs_berlin/) and [record](https://www.youtube.com/channel/UClSmiKom-8XsWbi5NTWurjg) the talks every time. Records are usually available one or two days after the meetup.
+Our meetups take place monthly every second Tuesday at 7pm. We usually have at least one talk right after we ate some pizza and had some drinks. We also [stream](https://www.instagram.com/vuejs_berlin/) and [record](https://www.youtube.com/channel/UClSmiKom-8XsWbi5NTWurjg) the talks from time to time. Records are usually available one or two days after the meetup. Unfortunately there are no recordings since a few months due to a technical issue. We're working on it.
 
 Find all meetup recordings [here](/meetups/) or on [youtube](https://www.youtube.com/channel/UClSmiKom-8XsWbi5NTWurjg)
 
